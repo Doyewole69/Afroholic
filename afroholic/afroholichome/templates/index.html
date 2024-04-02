@@ -1,0 +1,8 @@
+<img src="/static/images/{{afroholichome.ruger.project_image}}" alt="">
+<h2>{{afroholichome.project.2.artist_name}}</h2>
+
+
+<form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Subscribe</button>
+</form>

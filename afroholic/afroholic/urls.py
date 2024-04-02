@@ -20,6 +20,6 @@ from afroholichome import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('subscribe/', views.subscribe, name='subscribe'),
+    path('', views.subscribe, name='subscribe'),
     path('success/', views.success, name='success'),
 ]

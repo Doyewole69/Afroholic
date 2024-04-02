@@ -2,16 +2,23 @@ from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import SubscribeForm
+from django.conf import settings
+
 
 def subscribe(request):
     if request.method == 'POST':
         form = SubscribeForm(request.POST)
         if form.is_valid():
             subscriber = form.save()
+            with open('newsletter.txt', 'r') as f:
+                email_content = f.read()
+                
+            email_content = email_content.format(name=subscriber.first_name)
+
             send_mail(
-                'Welcome to Our Newsletter',
-                'Thank you for subscribing to our newsletter!',
-                'your@example.com',  # Replace with your email
+                'Welcome to Afroholic Family!x',
+                email_content,
+                settings.EMAIL_HOST_USER,  # Sender's email
                 [subscriber.email],
                 fail_silently=False,
             )
