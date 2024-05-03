@@ -1,2 +1,27 @@
-<h2>Subscription Successful!</h2>
-<p>Thank you for subscribing to our newsletter.</p>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body style="background-color: #141416;">
+
+    <h2 style="text-align: center;
+position: relative;
+top: 5em;font-weight: 900; color:white;">THANK YOU FOR SUBSCRIBING</h2>
+    <p style="text-align: center;
+position: relative;
+top: 15em;
+font-size: 18px;
+font-weight: 900; color:white;">Welcome to the Afroholic Family!!</p>
+
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "{% url 'subscribe' %}"; // Replace with the actual URL of your landing page
+        }, 5000);
+    </script>
+
+</body>
+
+</html>

@@ -139,8 +139,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_SSL = True  
-EMAIL_HOST = 'server33.web-hosting.com'  
+EMAIL_HOST = 'server315.web-hosting.com'  
 EMAIL_PORT = 465  
-EMAIL_HOST_USER = 'info@royalelipse.org'  
-EMAIL_HOST_PASSWORD = 'RoyalE2589$'
-DEFAULT_FROM_EMAIL = 'RoyalElipse <admin@royalelipse.org>'
+EMAIL_HOST_USER = 'info@Afroholicmusic.com'  
+EMAIL_HOST_PASSWORD = 'Afroholic6996$'
+DEFAULT_FROM_EMAIL = 'Afroholic Music <info@Afroholicmusic.com>'
