@@ -29,3 +29,21 @@ def subscribe(request):
 
 def success(request):
     return render(request, 'success.html')
+
+def artistes(request):
+    return render(request, 'artistes.html')
+
+def olusegun(request):
+    return render(request, 'olusegun.html')
+
+def vennessa(request):
+    return render(request, 'vennessa.html')
+
+def leo9ice(request):
+    return render(request, 'leo9ice.html')
+
+def lin(request):
+    return render(request, 'lin.html')
+
+def skeffi(request):
+    return render(request, 'skeffi.html')

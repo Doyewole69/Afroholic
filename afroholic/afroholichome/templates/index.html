@@ -28,33 +28,33 @@
           <i class="fas fa-bars"></i>
         </label>
 
-        <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG">
+        <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
 
         <ul>
-            <img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG">
-            <li><a href="">ABOUT</a></li>
+            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+            <li><a href="{% url 'subscribe' %}">HOME</a></li>
             <li><a href="">DEPARTMENTS</a></li>
             <li><a href="">CLIENTS</a></li>
             <li><a href="">AFFILIATES</a></li>
-            <li><a href="">J2N</a></li>
+            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
-    </nav>
 
     <section id="img-slide">
 
         <div id="fb1">
 
-
-
-            <h2 id="hfb1">AFROHOLIC</h2>
-
-            <p id="pfb1">Holic : a person having an abnormal desire for or dependence on… <br><br> AFROHOLIC Our name speaks for itself. We love all types of music. However we have chosen to spotlight the diverse music coming out of the continent of Africa. The number
-                of dialects and languages in Africa is simply mind boggling. What’s even more remarkable is that when accompanied by music it doesn’t matter what the language is. Whether you understand the lyrics or not, the music just connects. <br>                AFROBEATS | AFROFUNK | AFROSOUL | AFROHOUSE | AFROJAZZ | AFROMANCE | AFROHILIFE | AFROCONTEMPORARY. <br> We live and love it all. Welcome home!</p>
-
-            <div>
+            <div style="margin: auto;">
                 <img id="logoimgslide" src={% static "images/logoacc.png" %} alt="">
             </div>
+
+
+
+
+            <p id="pfb1">Holic : A person having an abnormal desire for or dependence on… <br><br> AFROHOLIC Our name speaks for itself. We love all types of music. However we have chosen to spotlight the diverse music coming out of the continent of Africa. The number
+                of dialects and languages in Africa is simply mind boggling. What’s even more remarkable is that when accompanied by music it doesn’t matter what the language is. Whether you understand the lyrics or not, the music just connects. <br>                AFROBEATS | AFROFUNK | AFROSOUL | AFROHOUSE | AFROJAZZ | AFROMANCE | AFROHILIFE | AFROCONTEMPORARY. <br> We live and love it all. Welcome home!</p>
+
+
 
 
 
@@ -62,11 +62,12 @@
 
         <div id="fb11">
 
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegun1.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegun2.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegun3.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegun4.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/OLÚSÉGUN.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc1.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc2.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc3.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc4.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc5.jpg" %}>
+            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunart.jpg" %}>
 
 
 
@@ -77,15 +78,15 @@
 
                 function carousel() {
                     var i;
-                    var x = document.getElementsByClassName("mySlides");
+                    var x = document.getElementsByClassName("mySlides ");
                     for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
+                        x[i].style.display = "none ";
                     }
                     myIndex++;
                     if (myIndex > x.length) {
                         myIndex = 1
                     }
-                    x[myIndex - 1].style.display = "block";
+                    x[myIndex - 1].style.display = "block ";
                     setTimeout(carousel, 4000); // Change image every 2 seconds
                 }
             </script>
@@ -93,93 +94,49 @@
         </div>
 
 
-    </section>
 
-    <section id="stats">
-
-        <div id="major-m">
-
-            <h2 id="stat-numbers">1</h2>
-            <span id="stat-span1">Markets</span>
-
-
-        </div>
-
-        <div id="followers">
-
-            <h2 id="stat-numbers">100k</h2>
-            <span id="stat-span2">Followers</span>
-
-
-        </div>
-
-        <div id="countries">
-
-            <h2 id="stat-numbers">10</h2>
-            <span id="stat-span3">Countries</span>
-
-
-        </div>
-
-        <div id="streams">
-
-            <h2 id="stat-numbers">10m</h2>
-            <span id="stat-span4">Streams</span>
-
-
-        </div>
-
-        <div id="awards">
-
-            <h2 id="stat-numbers">2</h2>
-            <span id="stat-span5">Awards</span>
-
-
-        </div>
 
     </section>
 
 
     <section id="latest">
 
-        <h1 id="hlatest">LATEST <br> PROJECTS</h1>
+        <h1 id="hlatest">OUR <br> PROJECTS</h1>
 
         <div class="dots-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
+            <div class="dot "></div>
         </div>
 
         <div id="image-flex">
 
             <div>
 
-                <p style="text-align: center;bottom: 2em;
-                position: relative;">MY BABY <br>" OLUSEGUN "
+                <p style="text-align: center;bottom: 2em; position: relative; ">MY BABY <br>" OLUSEGUN "
                 </p>
-                <h2 style="text-align: center;bottom: 1em;
-                position: relative;">01</h2>
+                <h2 style="text-align: center;bottom: 1em; position: relative; ">01</h2>
 
                 <p id="img-flex1line"></p>
 
-                <img id="img-flex1" src={% static "images/mybabyacc.png" %}>
+                <a target="_blank" href="https://lnkfi.re/MybabyOlusegun "><img id="img-flex1" src={% static "images/mybabyacc.png" %}></a>
             </div>
 
             <div>
 
-                <p style="text-align: center;">AFROHEAT 2 <br> " SAVY,LEO9ICE <br> & ICEBOIY OLA "
+                <p style="text-align: center; ">AFROHEAT 2 <br> " SAVY,LEO9ICE <br> & ICEBOIY OLA "
                 </p>
                 <h2 style="text-align: center;">02</h2>
                 <p id="img-flex2line"></p>
 
-                <img id="img-flex2" src={% static "images/afroholicnr.jpg" %}>
+                <a target="_blank" href="https://krewkut.lnk.to/Afroheat2"><img id="img-flex2" src={% static "images/afroholicnr.jpg" %}></a>
 
             </div>
 
@@ -189,6 +146,22 @@
 
         </div>
 
+    </section>
+
+    <section id="videos">
+
+        <h1 id="h1videos">OUR <br> VIDEOS</h1>
+
+        <div id="vid-flex">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/afpPS7ysA8s?si=cuJrsaVm35WIVJgK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            <<iframe src="https://jumpshare.com/embed/Z06wFNTIAjTRPHjv2u5c" frameborder="0" width="560" height="315" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+
+        </div>
     </section>
 
 
@@ -201,13 +174,14 @@
 
             <div id="dep1">
 
-                <img src={% static "images/publishing.png" %} alt="">
+                <img id="dep-img" src={% static "images/publishing.png" %} alt="">
 
-                <h2>PUBLISHING</h2>
+                <h2 id="h2dep">MUSIC SYNC AND LICENSING</h2>
 
                 <p id="dep-line"></p>
 
-                <P>This department has direct relationships with Performing Rights Organizations and other collection societies across the globe. With years of experience our team can pitch and collect on your behalf increasing growth and revenue. </P>
+                <P id="pdep">We elevate artists music career with our specialized sync and licensing services. We facilitate partnerships between artists and various media platforms, ensuring your music reaches new audiences through films, TV shows, commercials, and
+                    more. Let us help you navigate the licensing landscape and maximize your earning potential while showcasing your talent to the world. </P>
 
 
 
@@ -215,14 +189,14 @@
             </div>
             <div id="dep2">
 
-                <img src={% static "images/distribution.png" %} alt="">
+                <img id="dep-img" src={% static "images/distribution.png" %} alt="">
 
-                <h2>DISTRIBUTION</h2>
+                <h2 id="h2dep">DISTRIBUTION</h2>
 
                 <p id="dep-line"></p>
 
-                <p> Grow your audience and distribute your content globally. Our distribution platform allows the artist to monetize music videos, compositions, and sound recordings. WIth an easy to use interface you can view your analytics, handle splits,
-                    and manage royalties. </p>
+                <p id="pdep"> Through our distribution platform, we assist artists in sharing their music worldwide, with the primary goal of fostering growth. Additionally, we aid artists in generating income from every piece of work they release. Even in split sharing
+                    and royalties. </p>
 
 
 
@@ -230,13 +204,14 @@
             </div>
             <div id="dep3">
 
-                <img src={% static "images/consulting.png" %} alt="">
+                <img id="dep-img" src={% static "images/consulting.png" %} alt="">
 
-                <h2>CONSULTING</h2>
+                <h2 id="h2dep">CONSULTING</h2>
 
                 <p id="dep-line"></p>
 
-                <p>With over 20 years in the music industry Immensum Music has shaped many artist’s careers from around the globe. Our consultation department focuses on marketing, artist development, and industry resources to help you reach your goals.
+                <p id="pdep">With a team boasting over two decades of collective experience, this sector of the company focuses on artist development, strategic resource allocation, and effective music marketing. Our mission is to support artists in reaching their
+                    fullest potential and expanding their audience reach.
                 </p>
 
 
@@ -245,14 +220,14 @@
             </div>
             <div id="dep4">
 
-                <img src={% static "images/rights.png" %} alt="">
+                <img id="dep-img" src={% static "images/rights.png" %} alt="">
 
-                <h2>RIGHTS</h2>
+                <h2 id="h2dep">SHOWS & LIVE PERFORMANCE</h2>
 
                 <p id="dep-line"></p>
 
-                <p>Any time your song is broadcast on the radio or TV, or played live in concert, your “neighboring rights” are due. We manage complex ownership splits by territory for every asset type and set protection policies to meet your goals as a
-                    creator. </p>
+                <p id="pdep">We bring a difference in our live performances with our comprehensive range of services tailored to meet the unique needs of artists and event organizers. From stage setup and technical support to artist bookings and venue coordination,
+                    we're here to ensure your live shows are unforgettable experiences for both performers and audiences alike. </p>
 
 
 
@@ -260,13 +235,13 @@
             </div>
             <div id="dep5">
 
-                <img src={% static "images/management.png" %} alt="">
+                <img id="dep-img" src={% static "images/management.png" %} alt="">
 
-                <h2>MANAGEMENT</h2>
+                <h2 id="h2dep">MANAGEMENT</h2>
 
                 <p id="dep-line"></p>
 
-                <p>Our management department consistently shares their experience, network, and knowledge across teams around the world giving each client an advantage above the rest.The team will implement strategy in all aspects of the client's career.</p>
+                <p id="pdep">Our management team crafts customized and detailed strategies tailored to each artist, ensuring they can reach maximum and achievable goals</p>
 
 
 
@@ -274,6 +249,30 @@
             </div>
 
         </div>
+
+    </section>
+
+
+    <section id="subscribe">
+
+        <h2 id="subh2">
+
+            Join 15500+ subscribers
+
+        </h2>
+
+        <p id="subp">
+
+            lovers of My Afroholic Music. I would love you to Subscribe, so you can easily get updates on What’s new and going on with the label and when there is an event near you. Thank You!.
+
+        </p>
+
+        <form class="input-group" action="" method="post">
+            {% csrf_token %} {{ form.as_p }}
+
+            <input class="button--submit" value="Submit" type="submit">
+        </form>
+
 
     </section>
 
@@ -286,21 +285,15 @@
         <div id="footer">
             <div class="footer-segment">
                 <h4>Contact Us</h4>
-                <p>Email: info@afroholic.com</p>
+                <p>Email: info@afroholicmusic.com</p>
+                <p>Phone: +23481104362248</p>
+                <p>Address: Ikeja, Lagos.</p>
+
                 <div class="social-media-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-            </div>
-            <div class="footer-segment">
-
-
-                <h4>Stay up to date with exclusive releases,contents and more...</h4>
-                <form method="post">
-                    {% csrf_token %} {{ form.as_p }}
-                    <button type="submit"> <span>Subscribe</span></button>
-                </form>
             </div>
 
         </div>

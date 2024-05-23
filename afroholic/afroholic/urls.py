@@ -22,4 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.subscribe, name='subscribe'),
     path('success/', views.success, name='success'),
+    path('artistes/', views.artistes, name='artistes'),
+    path('artistes/olusegun', views.olusegun, name='olusegun-music'),
+    path('artistes/vennessa', views.vennessa, name='vennessa-music'),
+    path('artistes/leo9ice', views.leo9ice, name='leo9ice-music'),
+    path('artistes/lin', views.lin, name='lin-music'),
+    path('artistes/skeffi', views.skeffi, name='skeffi-music'),
 ]

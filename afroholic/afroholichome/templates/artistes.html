@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroholic Artistes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroholic</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Afroholic(1).png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label id="checkbtn" for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+
+        <ul>
+            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+            <li><a href="{% url 'subscribe' %}">HOME</a></li>
+            <li><a href="">DEPARTMENTS</a></li>
+            <li><a href="">CLIENTS</a></li>
+            <li><a href="">AFFILIATES</a></li>
+            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+
+        </ul>
+
+    <h1 id="h1artistes">ARTISTES</h1>
+
+    <section id="flexartistes">
+
+        <div id="artiste1">
+
+            <a id="artist-select" href="{% url 'olusegun-music' %}"><img id="img-artistes" src={% static "images/olusegunartacc.jpg" %} alt=""></a>
+
+            <p id="partistes">OLUSEGUN MUSIC</p>
+
+        </div>
+
+        <div id="artiste2">
+
+            <a id="artist-select" href="{% url 'vennessa-music' %}"><img id="img-artistes" src={% static "images/afrovanessa.jpg" %} alt=""></a>
+
+            <p id="partistes">VENNESSA JACKSON</p>
+
+        </div>
+
+        <div id="artiste3">
+
+            <a id="artist-select" href="{% url 'leo9ice-music' %}"><img id="img-artistes" src={% static "images/olusegun1.jpg" %} alt=""></a>
+
+            <p id="partistes">LEO9ICE</p>
+
+        </div>
+
+        <div id="artiste4">
+
+            <a id="artist-select" href="{% url 'lin-music' %}"><img id="img-artistes" src={% static "images/olusegun4.jpg" %} alt=""></a>
+
+            <p id="partistes">LIN NJOROGE</p>
+
+        </div>
+
+        <div id="artiste5">
+
+            <a id="artist-select" href="{% url 'skeffi-music' %}"><img id="img-artistes" src={% static "images/olusegun2.jpg" %} alt=""></a>
+
+            <p id="partistes">SKEFFI</p>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

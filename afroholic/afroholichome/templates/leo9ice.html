@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroholic</title>
+    <link rel="stylesheet" href="{% static 'css/indexprofile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/indexprofile.js' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Afroholic(1).png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label id="checkbtn" for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+
+        <ul>
+            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+            <li><a href="{% url 'subscribe' %}">HOME</a></li>
+            <li><a href="">DEPARTMENTS</a></li>
+            <li><a href="">CLIENTS</a></li>
+            <li><a href="">AFFILIATES</a></li>
+            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+
+        </ul>
+
+    <section id="about-section" class="pt-5 pb-5">
+        <div class="container wrapabout">
+            <div class="red"></div>
+            <div class="row">
+                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                    <div class="blockabout">
+                        <div class="blockabout-inner text-center text-sm-start">
+                            <div class="title-big pb-3 mb-3">
+                                <h3>LEO9ICE</h3>
+                            </div>
+                            <p class="description-p text-muted pe-0 pe-lg-0">
+                                Eunice Napoleon also known as Leo9ice is a Nigerian Singer and Rapper originating from Edo state, Nigeria. She is passionate about music, baking and spending time with loved ones. Along with her sisters, she runs HELEN’S VOGUE, a Fashion design enterprise. 
+                               
+                                
+
+                            </p>
+                            <p class="description-p text-muted pe-0 pe-lg-0">  Leo9ice aspires to make a name for herself in the music and Fashion industries globally.</p>
+                            <div class="sosmed-horizontal pt-3 pb-3">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/leo9ice_?igsh=MWk1eTE1NG9qcXFvOA=="><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="#"><i class="fa fa-spotify"></i></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <figure class="potoaboutwrap">
+                        <img id="img-profile" class="img-profile" src={% static "images/olusegunacc1.jpg" %} alt="potoabout" />
+                        
+                    </figure>
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+        
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("img-profile ");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none ";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {
+                                myIndex = 1
+                            }
+                            x[myIndex - 1].style.display = "block ";
+                            setTimeout(carousel, 4000); // Change image every 2 seconds
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer  style="top:15em;">
+        <div class="footer-segment">
+            <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
+        </div>
+        <div id="footer">
+            <div class="footer-segment">
+                <h4>Contact Us</h4>
+                <p>Email: info@afroholicmusic.com</p>
+                <p>Phone: +23481104362248</p>
+                <p>Address: Ikeja, Lagos.</p>
+
+                <div class="social-media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>

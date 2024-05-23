@@ -6,6 +6,62 @@
     }
     /* Nav - bar */
     
+    .header {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 10px 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        position: relative;
+        color: #fff;
+    }
+    
+    .banner-image {
+        vertical-align: middle;
+        min-height: 100%;
+        width: 100%;
+    }
+    
+    .banner:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(74, 4, 38, 0.53);
+        content: "";
+    }
+    
+    .banner-caption {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    .subfooter {
+        background-color: #DA095F;
+        padding: 40px 0;
+    }
+    
+    .subfooter a {
+        color: #FF89BA;
+    }
+    
+    .section {
+        background-color: #ffffff;
+        padding: 80px 0;
+    }
+    
     a#logoa {
         font-size: 25px;
         text-decoration: none;
@@ -95,39 +151,53 @@
     
     section#img-slide {
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         color: white;
-        height: 567px;
     }
     
     div#fb1 {
         flex: 50%;
-        background-color: black;
+        /* From https://css.glass */
+        background: rgb(56 52 52 / 31%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.1px);
+        -webkit-backdrop-filter: blur(10.1px);
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: 10em;
     }
     
     div#fb11 {
         flex: 50%;
         position: relative;
-        background-color: black;
     }
     
     img#slider-img {
-        width: 100%;
-        height: 567px;
+        width: 50%;
+        height: 610px;
+        border-radius: 200em;
+        margin: auto;
+        box-shadow: -15px -15px 50px lightblue;
+        position: relative;
+        top: 2em;
+        border: 20px solid white;
     }
     
     img#logoimgslide {
-        width: 50%;
         position: relative;
-        left: 150px;
+        left: 275px;
         bottom: 2.5em;
     }
     
-    h2#hfb1 {
+    h1#hfb1 {
         text-align: center;
         position: relative;
         top: 15px;
-        font-family: roboto;
+        font-weight: 800;
+        color: black;
     }
     
     p#pfb1 {
@@ -135,8 +205,10 @@
         padding-left: 5em;
         padding-right: 5em;
         position: relative;
-        top: 15px;
+        bottom: 100px;
         font-family: roboto;
+        font-size: 20px;
+        font-weight: 200;
     }
     
     @media (max-width: 952px) {
@@ -210,82 +282,11 @@
             display: none;
         }
     }
-    /* Stats Segment*/
-    
-    section#stats {
-        display: flex;
-        flex-direction: row;
-        color: bisque;
-        text-align: center;
-        padding: 0px 20em 0px 20em;
-        height: 100px;
-        background-color: black;
-    }
-    
-    h2#stat-numbers {
-        color: chocolate;
-        font-weight: 700;
-    }
-    
-    div#major-m {
-        flex: 20%;
-    }
-    
-    div#followers {
-        flex: 20%;
-    }
-    
-    div#countries {
-        flex: 20%;
-    }
-    
-    div#streams {
-        flex: 20%;
-    }
-    
-    div#awards {
-        flex: 20%;
-    }
-    
-    span#stat-span1 {
-        font-size: 10px;
-        font-weight: 100;
-        border-bottom: solid 2px red;
-        padding-bottom: 8px;
-    }
-    
-    span#stat-span2 {
-        font-size: 10px;
-        font-weight: 100;
-        border-bottom: solid 2px red;
-        padding-bottom: 8px;
-    }
-    
-    span#stat-span3 {
-        font-size: 10px;
-        font-weight: 100;
-        border-bottom: solid 2px red;
-        padding-bottom: 8px;
-    }
-    
-    span#stat-span4 {
-        font-size: 10px;
-        font-weight: 100;
-        border-bottom: solid 2px red;
-        padding-bottom: 8px;
-    }
-    
-    span#stat-span5 {
-        font-size: 10px;
-        font-weight: 100;
-        border-bottom: solid 2px red;
-        padding-bottom: 8px;
-    }
     /* latest projects */
     
     section#latest {
         position: relative;
-        top: 6em;
+        top: 20em;
     }
     
     div#image-flex {
@@ -293,7 +294,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        top: 3em;
+        top: 10em;
         color: white;
     }
     
@@ -336,10 +337,14 @@
     .dots-container {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         height: 100%;
         width: 100%;
+        padding-left: 15em;
+        padding-right: 15em;
+        position: relative;
+        top: 1em;
     }
     
     .dot {
@@ -409,11 +414,34 @@
         position: relative;
         top: 2em;
     }
+    /* our videos */
+    
+    section#videos {
+        position: relative;
+        top: 20em;
+    }
+    
+    h1#h1videos {
+        position: relative;
+        text-align: center;
+        top: 10em;
+        color: white;
+        font-weight: 600;
+        font-size: 3em;
+    }
+    
+    div#vid-flex {
+        display: flex;
+        flex-direction: row;
+        padding: 5em;
+        position: relative;
+        top: 30em;
+    }
     /* department */
     
     section#department {
         position: relative;
-        top: 25em;
+        top: 60em;
     }
     
     h1#h1department {
@@ -440,10 +468,11 @@
     div#dep4,
     div#dep5 {
         width: 397px;
-        height: 500px;
+        height: 580px;
         background-color: #1b1c1e;
         padding: 4em;
         color: white;
+        border-radius: 24px;
     }
     
     div#dep3,
@@ -465,13 +494,98 @@
         position: relative;
     }
     /* footer*/
+    /* subscribe */
+    
+    #subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1132px;
+        height: 450px;
+        border: 1px solid #A1AEBF;
+        border-radius: 24px;
+        position: relative;
+        top: 85em;
+        margin: auto;
+    }
+    
+    #ccmlogo {
+        height: 10em;
+        width: 10em;
+    }
+    
+    #subh2 {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    
+    #subp {
+        color: white;
+        width: 42em;
+        word-wrap: break-word;
+    }
+    
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input,
+    #id_first_name,
+    #id_email {
+        min-height: 50px;
+        padding: 0 1rem;
+        color: #fff;
+        font-size: 15px;
+        border: 1px solid #5e4dcd;
+        border-radius: 12px;
+        background-color: transparent;
+        margin: auto;
+        width: 24em;
+    }
+    
+    label {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .button--submit {
+        min-height: 50px;
+        padding: .5em 1em;
+        border: none;
+        border-radius: 0 6px 6px 0;
+        background-color: #5e4dcd;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+    }
+    
+    .button--submit:hover {
+        background-color: #5e5dcd;
+    }
+    
+    .input:focus,
+    .input:focus-visible {
+        border-color: #3898EC;
+        outline: none;
+    }
+    /* footer */
     
     footer {
         background-color: #292933;
         padding: 20px 0;
         /* Allow items to wrap to the next line */
         position: relative;
-        top: 50em;
+        top: 90em;
+    }
+    
+    input#id_first_name {
+        height: 2.5em;
+        border-radius: 20px;
     }
     
     div#footer {
@@ -604,6 +718,32 @@
     .social-media-icons a:hover {
         color: #007bff;
     }
+    /* Artistes */
+    
+    h1#h1artistes {
+        font-size: 3em;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    section#flexartistes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    p#partistes {
+        color: white;
+        text-align: center;
+    }
+    
+    img#img-artistes {
+        width: 15em;
+        height: 15em;
+        border-radius: 30px;
+    }
     
     @media screen and (min-width: 768px) {
         .footer-segment {
@@ -616,6 +756,19 @@
     /* Media Query for Mobile Devices */
     
     @media (max-width: 480px) {
+        div#fb1 {
+            flex: 50%;
+            background: rgb(56 52 52 / 31%);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10.1px);
+            -webkit-backdrop-filter: blur(10.1px);
+            border: 1px solid rgba(255, 255, 255, 0.65);
+            width: 80%;
+            margin: auto;
+            position: relative;
+            top: 2em;
+        }
         h2#hfb1 {
             text-align: center;
             font-size: 20px;
@@ -624,25 +777,31 @@
         }
         section#img-slide {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             color: white;
             height: 1096px;
+            left: 30px;
+        position: relative;
         }
         img#slider-img {
             width: 100%;
             height: 425px;
+            position: relative;
+            top: 5em;
+            border: 5px solid white;
         }
         p#pfb1 {
             text-align: justify;
             padding-left: 2em;
             padding-right: 2em;
-            top: 4em;
+            top: 0em;
             position: relative;
+            font-size: 12px;
         }
         img#logoimgslide {
-            width: 60%;
+            width: 90%;
             position: relative;
-            left: 80px;
+            left: 18px;
             top: 1.5em;
         }
         section#stats {
@@ -657,6 +816,10 @@
             font-weight: 100;
         }
         /* latest projects */
+        section#latest {
+            position: relative;
+            top: 10em;
+        }
         p#img-flex1line {
             background-color: blue;
             width: 6em;
@@ -698,69 +861,152 @@
             position: relative;
             top: 6em;
         }
+        .dots-container {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 100%;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        /* our videos */
+        div#vid-flex {
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            position: relative;
+            top: 30em;
+            flex-wrap: wrap;
+        }
         /* departments */
+        img#dep-img {
+            width: 45px;
+        }
+        h2#h2dep {
+            font-size: 16px;
+        }
+        p#pdep {
+            font-size: 10px;
+        }
+        div#department-flex {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            position: relative;
+            top: 5em;
+        }
         div#dep1,
         div#dep2,
         div#dep3,
         div#dep4,
         div#dep5 {
-            width: 300px;
-            padding: 2em;
+            width: 180px;
+            padding: 1em;
+            height: 400px;
+            border-radius: 24px;
         }
         p#dep-line {
             background-color: #3f4349;
-            width: 16em;
+            width: 10em;
             height: 5px;
-            margin: auto;
+            margin: none;
             position: relative;
         }
         div#dep2 {
             position: relative;
-            top: 3em;
+            top: 0em;
         }
         div#dep3 {
             position: relative;
-            top: 6em;
+            top: 3em;
         }
         div#dep4 {
             position: relative;
-            top: 9em;
+            top: 3em;
         }
         div#dep5 {
             position: relative;
-            top: 12em;
+            top: 6em;
+        }
+        #subh2 {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        #subp {
+            color: white;
+            width: 24em;
+            word-wrap: break-word;
+            text-align: justify;
+        }
+        label {
+            color: white;
+            font-size: 12px;
+        }
+        .input,
+        #id_first_name,
+        #id_email {
+            min-height: 50px;
+            padding: 0 1rem;
+            color: #fff;
+            font-size: 15px;
+            border: 1px solid #5e4dcd;
+            border-radius: 12px;
+            background-color: transparent;
+            margin: auto;
+            width: 15em;
+        }
+        #subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 385px;
+            height: 450px;
+            border: 1px solid #A1AEBF;
+            border-radius: 24px;
+            position: relative;
+            top: 85em;
+            margin: auto;
+            flex-wrap: wrap;
         }
     }
     /* Media Query for low resolution  Tablets, Ipads */
     
     @media (min-width: 481px) and (max-width: 767px) {
-        body {
-            background-color: yellow;
+    
         }
-    }
+    
     /* Media Query for Tablets Ipads portrait mode portrait tab and galaxy fold */
     
     @media (min-width: 768px) and (max-width: 1024px) {
         section#img-slide {
             display: flex;
-            flex-direction: row;
+            flex-direction: column-reverse;
             color: white;
-            height: 650px;
+            position: relative;
+        left: 30px;
         }
         img#slider-img {
-            width: 100%;
+            width: 85%;
             height: 650px;
         }
         img#logoimgslide {
-            width: 50%;
             position: relative;
-            left: 100px;
+            left: 70px;
             bottom: 0em;
+
         }
         p#pfb1 {
             text-align: justify;
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 3em;
+            padding-right: 3em;
+            top: -60px;
         }
         #check:checked~ul {
             left: 0;
@@ -817,6 +1063,24 @@
             top: 2em;
         }
         /* departments */
+        div#dep1,
+        div#dep2,
+        div#dep3,
+        div#dep4,
+        div#dep5 {
+            width: 320px;
+            height: 640px;
+            background-color: #1b1c1e;
+            padding: 3em;
+            color: white;
+        }
+        p#dep-line {
+            background-color: #3f4349;
+            width: 15em;
+            height: 5px;
+            margin: auto;
+            position: relative;
+        }
         div#department-flex {
             display: flex;
             flex-direction: row;
@@ -826,5 +1090,18 @@
             justify-content: space-evenly;
             position: relative;
             top: 5em;
+        }
+        #subscribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 450px;
+            border: 1px solid #A1AEBF;
+            border-radius: 24px;
+            position: relative;
+            top: 85em;
+            margin: auto;
         }
     }
