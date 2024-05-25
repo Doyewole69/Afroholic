@@ -780,8 +780,7 @@
             flex-direction: column;
             color: white;
             height: 1096px;
-            left: 30px;
-        position: relative;
+            position: relative;
         }
         img#slider-img {
             width: 100%;
@@ -978,10 +977,7 @@
     }
     /* Media Query for low resolution  Tablets, Ipads */
     
-    @media (min-width: 481px) and (max-width: 767px) {
-    
-        }
-    
+    @media (min-width: 481px) and (max-width: 767px) {}
     /* Media Query for Tablets Ipads portrait mode portrait tab and galaxy fold */
     
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -990,7 +986,6 @@
             flex-direction: column-reverse;
             color: white;
             position: relative;
-        left: 30px;
         }
         img#slider-img {
             width: 85%;
@@ -1000,7 +995,6 @@
             position: relative;
             left: 70px;
             bottom: 0em;
-
         }
         p#pfb1 {
             text-align: justify;

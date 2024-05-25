@@ -34,89 +34,88 @@
 
         <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
 
-        <ul>
-            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
-            <li><a href="{% url 'subscribe' %}">HOME</a></li>
-            <li><a href="">DEPARTMENTS</a></li>
-            <li><a href="">CLIENTS</a></li>
-            <li><a href="">AFFILIATES</a></li>
-            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+        <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+        <li><a href="{% url 'subscribe' %}">HOME</a></li>
+        <li><a href="">DEPARTMENTS</a></li>
+        <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
+        <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
 
-    <section id="about-section" class="pt-5 pb-5">
-        <div class="container wrapabout">
-            <div class="red"></div>
-            <div class="row">
-                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
-                    <div class="blockabout">
-                        <div class="blockabout-inner text-center text-sm-start">
-                            <div class="title-big pb-3 mb-3">
-                                <h3>LIN NJOROGE</h3>
-                            </div>
-                            <p class="description-p text-muted pe-0 pe-lg-0">
-                                Lin Njoroge is a powerful Afrobeat and Afro-house singer/songwriter who hails from Nairobi, Kenya's vibrant and diversified musical scene. She delivers to the global music industry a unique blend of traditional Kenyan rhythms and contemporary sounds. She also has a notable proficiency in English, Swahili and Kikuyu languages.
 
-                                The rich cultural tapestry of Kenya is a major influence on Lin's musical journey; the rhythmic beats of Afrobeat and the customary melodies of Kikuyu Afrohouse serve as special sources of inspiration. 
+        <section id="about-section" class="pt-5 pb-5">
+            <div class="container wrapabout">
+                <div class="red"></div>
+                <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                        <div class="blockabout">
+                            <div class="blockabout-inner text-center text-sm-start">
+                                <div class="title-big pb-3 mb-3">
+                                    <h3>LIN NJOROGE</h3>
+                                </div>
+                                <p class="description-p text-muted pe-0 pe-lg-0">
+                                    Lin Njoroge is a powerful Afrobeat and Afro-house singer/songwriter who hails from Nairobi, Kenya's vibrant and diversified musical scene. She delivers to the global music industry a unique blend of traditional Kenyan rhythms and contemporary sounds.
+                                    She also has a notable proficiency in English, Swahili and Kikuyu languages. The rich cultural tapestry of Kenya is a major influence on Lin's musical journey; the rhythmic beats of Afrobeat and the customary melodies
+                                    of Kikuyu Afrohouse serve as special sources of inspiration.
 
-                            </p>
-                            <p class="description-p text-muted pe-0 pe-lg-0"> Her compelling sand passionate voice convey a love of telling stories via song, as she skillfully combines contemporary inspirations with the authenticity of her Kenyan background.</p>
-                            <div class="sosmed-horizontal pt-3 pb-3">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                <a href="#"><i class="fa fa-spotify"></i></a>
+                                </p>
+                                <p class="description-p text-muted pe-0 pe-lg-0"> Her compelling sand passionate voice convey a love of telling stories via song, as she skillfully combines contemporary inspirations with the authenticity of her Kenyan background.</p>
+                                <div class="sosmed-horizontal pt-3 pb-3">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a href="#"><i class="fa fa-spotify"></i></a>
+                                </div>
+
                             </div>
-    
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <figure class="potoaboutwrap">
-                        <img id="img-profile" class="img-profile" src={% static "images/olusegunacc4.jpg" %} alt="potoabout" />
-                        
-                    </figure>
-                    <script>
-                        var myIndex = 0;
-                        carousel();
-        
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("img-profile ");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none ";
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <figure class="potoaboutwrap">
+                            <img id="img-profile" class="img-profile" src={% static "images/olusegunacc4.jpg" %} alt="potoabout" />
+
+                        </figure>
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("img-profile ");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none ";
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {
+                                    myIndex = 1
+                                }
+                                x[myIndex - 1].style.display = "block ";
+                                setTimeout(carousel, 4000); // Change image every 2 seconds
                             }
-                            myIndex++;
-                            if (myIndex > x.length) {
-                                myIndex = 1
-                            }
-                            x[myIndex - 1].style.display = "block ";
-                            setTimeout(carousel, 4000); // Change image every 2 seconds
-                        }
-                    </script>
+                        </script>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer  style="top:15em;">
-        <div class="footer-segment">
-            <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
-        </div>
-        <div id="footer" >
+        </section>
+        <footer style="top:15em;">
             <div class="footer-segment">
-                <h4>Contact Us</h4>
-                <p>Email: info@afroholicmusic.com</p>
-                <p>Phone: +23481104362248</p>
-                <p>Address: Ikeja, Lagos.</p>
-
-                <div class="social-media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
             </div>
+            <div id="footer">
+                <div class="footer-segment">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@afroholicmusic.com</p>
+                    <p>Phone: +23481104362248</p>
+                    <p>Address: Ikeja, Lagos.</p>
 
-        </div>
-    </footer>
+                    <div class="social-media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 
 </body>

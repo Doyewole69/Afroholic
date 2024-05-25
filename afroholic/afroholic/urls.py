@@ -28,4 +28,7 @@ urlpatterns = [
     path('artistes/leo9ice', views.leo9ice, name='leo9ice-music'),
     path('artistes/lin', views.lin, name='lin-music'),
     path('artistes/skeffi', views.skeffi, name='skeffi-music'),
+    path('artistes/iceboiy', views.iceboiy, name='iceboiy-music'),
+    path('artistes/chuma', views.chuma, name='chuma-music'),
+    path('department/', views.department, name='department'),
 ]

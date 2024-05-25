@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afroholic</title>
+    <link rel="stylesheet" href="{% static 'css/indexprofile.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/indexprofile.js' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="{% static 'images/Afroholic(1).png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +21,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <nav>
         <input type="checkbox" id="check">
         <label id="checkbtn" for="check" class="checkbtn">
@@ -41,133 +45,7 @@
 
     </nav>
 
-    <section id="img-slide">
-
-        <div id="fb1">
-
-            <div style="margin: auto;">
-                <img id="logoimgslide" src={% static "images/logoacc.png" %} alt="">
-            </div>
-
-
-
-
-            <p id="pfb1">Holic : A person having an abnormal desire for or dependence on… <br><br> AFROHOLIC Our name speaks for itself. We love all types of music. However we have chosen to spotlight the diverse music coming out of the continent of Africa. The number
-                of dialects and languages in Africa is simply mind boggling. What’s even more remarkable is that when accompanied by music it doesn’t matter what the language is. Whether you understand the lyrics or not, the music just connects.
-                <br> AFROBEATS | AFROFUNK | AFROSOUL | AFROHOUSE | AFROJAZZ | AFROMANCE | AFROHILIFE | AFROCONTEMPORARY. <br> We live and love it all. Welcome home!</p>
-
-
-
-
-
-        </div>
-
-        <div id="fb11">
-
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc1.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc2.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc3.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc4.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunacc5.jpg" %}>
-            <img id="slider-img" class="mySlides w3-animate-fading" src={% static "images/olusegunart.jpg" %}>
-
-
-
-
-            <script>
-                var myIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides ");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none ";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
-                    }
-                    x[myIndex - 1].style.display = "block ";
-                    setTimeout(carousel, 4000); // Change image every 2 seconds
-                }
-            </script>
-
-        </div>
-
-
-
-
-    </section>
-
-
-    <section id="latest">
-
-        <h1 id="hlatest">OUR <br> PROJECTS</h1>
-
-        <div class="dots-container">
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-            <div class="dot "></div>
-        </div>
-
-        <div id="image-flex">
-
-            <div>
-
-                <p style="text-align: center;bottom: 2em; position: relative; ">MY BABY <br>" OLUSEGUN "
-                </p>
-                <h2 style="text-align: center;bottom: 1em; position: relative; ">01</h2>
-
-                <p id="img-flex1line"></p>
-
-                <a target="_blank" href="https://lnkfi.re/MybabyOlusegun "><img id="img-flex1" src={% static "images/mybabyacc.png" %}></a>
-            </div>
-
-            <div>
-
-                <p style="text-align: center; ">AFROHEAT 2 <br> " SAVY,LEO9ICE <br> & ICEBOIY OLA "
-                </p>
-                <h2 style="text-align: center;">02</h2>
-                <p id="img-flex2line"></p>
-
-                <a target="_blank" href="https://krewkut.lnk.to/Afroheat2"><img id="img-flex2" src={% static "images/afroholicnr.jpg" %}></a>
-
-            </div>
-
-
-
-
-
-        </div>
-
-    </section>
-
-    <section id="videos">
-
-        <h1 id="h1videos">OUR <br> VIDEOS</h1>
-
-        <div id="vid-flex">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/afpPS7ysA8s?si=cuJrsaVm35WIVJgK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-            <<iframe src="https://jumpshare.com/embed/Z06wFNTIAjTRPHjv2u5c" frameborder="0" width="560" height="315" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-
-
-        </div>
-    </section>
-
-
-    <section id="department">
+    <section>
 
         <h1 id="h1department">DEPARTMENTS</h1>
 
@@ -254,33 +132,7 @@
 
     </section>
 
-
-    <section id="subscribe">
-
-        <h2 id="subh2">
-
-            Join 15500+ subscribers
-
-        </h2>
-
-        <p id="subp">
-
-            lovers of My Afroholic Music. I would love you to Subscribe, so you can easily get updates on What’s new and going on with the label and when there is an event near you. Thank You!.
-
-        </p>
-
-        <form class="input-group" action="" method="post">
-            {% csrf_token %} {{ form.as_p }}
-
-            <input class="button--submit" value="Submit" type="submit">
-        </form>
-
-
-    </section>
-
-
-
-    <footer>
+    <footer style="top:15em;">
         <div class="footer-segment">
             <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
         </div>
@@ -300,15 +152,3 @@
 
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>

@@ -5,9 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afroholic Artistes</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afroholic</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +22,6 @@
 </head>
 
 <body>
-
     <nav>
         <input type="checkbox" id="check">
         <label id="checkbtn" for="check" class="checkbtn">
@@ -37,12 +33,15 @@
         <ul>
             <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
             <li><a href="{% url 'subscribe' %}">HOME</a></li>
-            <li><a href="">DEPARTMENTS</a></li>
-            <li><a href="">CLIENTS</a></li>
-            <li><a href="">AFFILIATES</a></li>
+            <li><a href="{% url 'department' %}">DEPARTMENTS</a></li>
+            <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
             <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
+
+    </nav>
+
+
 
     <h1 id="h1artistes">ARTISTES</h1>
 
@@ -87,6 +86,23 @@
             <p id="partistes">SKEFFI</p>
 
         </div>
+
+        <div id="artiste6">
+
+            <a id="artist-select" href="{% url 'chuma-music' %}"><img id="img-artistes" src={% static "images/olusegun3.jpg" %} alt=""></a>
+
+            <p id="partistes">CHUMA</p>
+
+        </div>
+
+        <div id="artiste7">
+
+            <a id="artist-select" href="{% url 'iceboiy-music' %}"><img id="img-artistes" src={% static "images/olusegunacc7.jpg" %} alt=""></a>
+
+            <p id="partistes">ICEBOIY</p>
+
+        </div>
+
 
     </section>
 

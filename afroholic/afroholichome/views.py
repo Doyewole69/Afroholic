@@ -47,3 +47,12 @@ def lin(request):
 
 def skeffi(request):
     return render(request, 'skeffi.html')
+
+def iceboiy(request):
+    return render(request, 'iceboiy.html')
+
+def chuma(request):
+    return render(request, 'chuma.html')
+
+def department(request):
+    return render(request, 'department.html')

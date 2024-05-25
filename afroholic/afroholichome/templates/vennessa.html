@@ -34,90 +34,90 @@
 
         <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
 
-        <ul>
-            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
-            <li><a href="{% url 'subscribe' %}">HOME</a></li>
-            <li><a href="">DEPARTMENTS</a></li>
-            <li><a href="">CLIENTS</a></li>
-            <li><a href="">AFFILIATES</a></li>
-            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+        <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+        <li><a href="{% url 'subscribe' %}">HOME</a></li>
+        <li><a href="">DEPARTMENTS</a></li>
+        <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
+        <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
 
-    <section id="about-section" class="pt-5 pb-5">
-        <div class="container wrapabout">
-            <div class="red"></div>
-            <div class="row">
-                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
-                    <div class="blockabout">
-                        <div class="blockabout-inner text-center text-sm-start">
-                            <div class="title-big pb-3 mb-3">
-                                <h3>VENNESSA JACKSON</h3>
-                            </div>
-                            <p class="description-p text-muted pe-0 pe-lg-0">
-                                Venessa Jackson is a South African songwriter, vocalist, performer who is about to venture on her first journey outside of her homeland.
-                                Venessa was influenced by her mother to sing at a very young age and won her first competition at 6 years old. Fast forward 33 years and there is not a day where Venessa doesn't pick up a pen and writing pad. If she isn't working on writing vocals, she is in the studio recording her magic.
-                                She currently has over a hundred releases consisting of originals, cover reworks, and remixes. She has recently been honored to be featured in the new book 'LADY OF THE HOUSE' where she joins 181 other inspirational women to share their stories of the part, they have played in Dance Music's past, present & future.
-                                
 
-                            </p>
-                            <p class="description-p text-muted pe-0 pe-lg-0"> Venessa continues to release new music and is constantly expanding her catalog with major labels in the House and Dance community.</p>
-                            <div class="sosmed-horizontal pt-3 pb-3">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                <a href="#"><i class="fa fa-spotify"></i></a>
+        <section id="about-section" class="pt-5 pb-5">
+            <div class="container wrapabout">
+                <div class="red"></div>
+                <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                        <div class="blockabout">
+                            <div class="blockabout-inner text-center text-sm-start">
+                                <div class="title-big pb-3 mb-3">
+                                    <h3>VENNESSA JACKSON</h3>
+                                </div>
+                                <p class="description-p text-muted pe-0 pe-lg-0">
+                                    Venessa Jackson is a South African songwriter, vocalist, performer who is about to venture on her first journey outside of her homeland. Venessa was influenced by her mother to sing at a very young age and won her first competition at 6 years old. Fast
+                                    forward 33 years and there is not a day where Venessa doesn't pick up a pen and writing pad. If she isn't working on writing vocals, she is in the studio recording her magic. She currently has over a hundred releases
+                                    consisting of originals, cover reworks, and remixes. She has recently been honored to be featured in the new book 'LADY OF THE HOUSE' where she joins 181 other inspirational women to share their stories of the part,
+                                    they have played in Dance Music's past, present & future.
+
+
+                                </p>
+                                <p class="description-p text-muted pe-0 pe-lg-0"> Venessa continues to release new music and is constantly expanding her catalog with major labels in the House and Dance community.</p>
+                                <div class="sosmed-horizontal pt-3 pb-3">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a href="#"><i class="fa fa-spotify"></i></a>
+                                </div>
+
                             </div>
-    
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <figure class="potoaboutwrap">
-                        <img id="img-profile" class="img-profile" src={% static "images/olusegunacc5.jpg" %} alt="potoabout" />
-                        
-                    </figure>
-                    <script>
-                        var myIndex = 0;
-                        carousel();
-        
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("img-profile ");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none ";
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <figure class="potoaboutwrap">
+                            <img id="img-profile" class="img-profile" src={% static "images/olusegunacc5.jpg" %} alt="potoabout" />
+
+                        </figure>
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("img-profile ");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none ";
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {
+                                    myIndex = 1
+                                }
+                                x[myIndex - 1].style.display = "block ";
+                                setTimeout(carousel, 4000); // Change image every 2 seconds
                             }
-                            myIndex++;
-                            if (myIndex > x.length) {
-                                myIndex = 1
-                            }
-                            x[myIndex - 1].style.display = "block ";
-                            setTimeout(carousel, 4000); // Change image every 2 seconds
-                        }
-                    </script>
+                        </script>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer  style="top:15em;">
-        <div class="footer-segment">
-            <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
-        </div>
-        <div id="footer" >
+        <footer style="top:15em;">
             <div class="footer-segment">
-                <h4>Contact Us</h4>
-                <p>Email: info@afroholicmusic.com</p>
-                <p>Phone: +23481104362248</p>
-                <p>Address: Ikeja, Lagos.</p>
-
-                <div class="social-media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
             </div>
+            <div id="footer">
+                <div class="footer-segment">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@afroholicmusic.com</p>
+                    <p>Phone: +23481104362248</p>
+                    <p>Address: Ikeja, Lagos.</p>
 
-        </div>
-    </footer>
+                    <div class="social-media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 </body>

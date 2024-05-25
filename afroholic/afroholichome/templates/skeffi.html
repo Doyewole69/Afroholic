@@ -34,89 +34,88 @@
 
         <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
 
-        <ul>
-            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
-            <li><a href="{% url 'subscribe' %}">HOME</a></li>
-            <li><a href="">DEPARTMENTS</a></li>
-            <li><a href="">CLIENTS</a></li>
-            <li><a href="">AFFILIATES</a></li>
-            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+        <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+        <li><a href="{% url 'subscribe' %}">HOME</a></li>
+        <li><a href="">DEPARTMENTS</a></li>
+        <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
+        <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
 
-    <section id="about-section" class="pt-5 pb-5">
-        <div class="container wrapabout">
-            <div class="red"></div>
-            <div class="row">
-                <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
-                    <div class="blockabout">
-                        <div class="blockabout-inner text-center text-sm-start">
-                            <div class="title-big pb-3 mb-3">
-                                <h3>SKEFFI</h3>
-                            </div>
-                            <p class="description-p text-muted pe-0 pe-lg-0">
-                                Ruth williams aka SKEFFI is a talented Singer / songwriter from Nigeria.
-She is also a hair stylist and makeup artist. She lives and writes all genres of music but her main interest is Christian and Gospel music. Skeffi wants to preach the message of Life and hope through her music. In addition to owning her own brand of hair and makeup products, she also wants to own a chain of successful hair salons and makeup studios all over the world.
 
-                            </p>
-                            <p class="description-p text-muted pe-0 pe-lg-0"> She is off to a good start.</p>
-                            <div class="sosmed-horizontal pt-3 pb-3">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                                <a href="#"><i class="fa fa-spotify"></i></a>
+        <section id="about-section" class="pt-5 pb-5">
+            <div class="container wrapabout">
+                <div class="red"></div>
+                <div class="row">
+                    <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                        <div class="blockabout">
+                            <div class="blockabout-inner text-center text-sm-start">
+                                <div class="title-big pb-3 mb-3">
+                                    <h3>SKEFFI</h3>
+                                </div>
+                                <p class="description-p text-muted pe-0 pe-lg-0">
+                                    Ruth williams aka SKEFFI is a talented Singer / songwriter from Nigeria. She is also a hair stylist and makeup artist. She lives and writes all genres of music but her main interest is Christian and Gospel music. Skeffi wants to preach the message of
+                                    Life and hope through her music. In addition to owning her own brand of hair and makeup products, she also wants to own a chain of successful hair salons and makeup studios all over the world.
+
+                                </p>
+                                <p class="description-p text-muted pe-0 pe-lg-0"> She is off to a good start.</p>
+                                <div class="sosmed-horizontal pt-3 pb-3">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a href="#"><i class="fa fa-spotify"></i></a>
+                                </div>
+
                             </div>
-    
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <figure class="potoaboutwrap">
-                        <img id="img-profile" class="img-profile" src={% static "images/olusegunacc2.jpg" %} alt="potoabout" />
-                        
-                    </figure>
-                    <script>
-                        var myIndex = 0;
-                        carousel();
-        
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("img-profile ");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none ";
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <figure class="potoaboutwrap">
+                            <img id="img-profile" class="img-profile" src={% static "images/olusegunacc2.jpg" %} alt="potoabout" />
+
+                        </figure>
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("img-profile ");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none ";
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {
+                                    myIndex = 1
+                                }
+                                x[myIndex - 1].style.display = "block ";
+                                setTimeout(carousel, 4000); // Change image every 2 seconds
                             }
-                            myIndex++;
-                            if (myIndex > x.length) {
-                                myIndex = 1
-                            }
-                            x[myIndex - 1].style.display = "block ";
-                            setTimeout(carousel, 4000); // Change image every 2 seconds
-                        }
-                    </script>
+                        </script>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer  style="top:15em;">
-        <div class="footer-segment">
-            <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
-        </div>
-        <div id="footer">
+        <footer style="top:15em;">
             <div class="footer-segment">
-                <h4>Contact Us</h4>
-                <p>Email: info@afroholicmusic.com</p>
-                <p>Phone: +23481104362248</p>
-                <p>Address: Ikeja, Lagos.</p>
-
-                <div class="social-media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <img id="img-footer" src={% static "images/logoacc.png" %} alt="">
             </div>
+            <div id="footer">
+                <div class="footer-segment">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@afroholicmusic.com</p>
+                    <p>Phone: +23481104362248</p>
+                    <p>Address: Ikeja, Lagos.</p>
 
-        </div>
-    </footer>
+                    <div class="social-media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 
 </body>
