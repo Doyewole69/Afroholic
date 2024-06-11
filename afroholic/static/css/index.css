@@ -493,6 +493,127 @@
         margin: auto;
         position: relative;
     }
+    /* Shop */
+    
+    #shop-sec {
+        position: relative;
+        top: 75em;
+    }
+    
+    #shoph1 {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 3em;
+    }
+    
+    div#bothmerch {
+        position: relative;
+        top: 5em;
+    }
+    
+    #merch1-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #merch-shirt1 {
+        height: 130px;
+    }
+    
+    #merch-shirt2 {
+        height: 250px;
+    }
+    
+    #merch1p1 {
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.2em;
+        color: #FF3900;
+        width: 425px;
+        position: relative;
+        bottom: 1.2em;
+    }
+    
+    #merch1p2 {
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        width: 425px;
+        position: relative;
+        bottom: 2em;
+    }
+    
+    #merch1-button-form {
+        position: relative;
+    }
+    
+    #merch1-button {
+        background-color: black;
+        width: 425px;
+        border: 2px solid white;
+        color: white;
+        height: 3em;
+        cursor: pointer;
+    }
+    
+    #merch1-button:hover {
+        background-color: #FF3900;
+        transition: 1s;
+    }
+    
+    #merch2-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        position: relative;
+        top: 8em;
+    }
+    
+    #merch-hoddie1,
+    #merch-hoddie2 {
+        height: 250px;
+    }
+    
+    #merch2p1 {
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.2em;
+        color: #FF3900;
+        width: 425px;
+        position: relative;
+        bottom: 1.2em;
+    }
+    
+    #merch2p2 {
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        width: 425px;
+        position: relative;
+        bottom: 2em;
+    }
+    
+    #merch2-button-form {
+        position: relative;
+    }
+    
+    #merch2-button {
+        background-color: black;
+        width: 425px;
+        border: 2px solid white;
+        color: white;
+        height: 3em;
+        cursor: pointer;
+    }
+    
+    #merch2-button:hover {
+        background-color: #FF3900;
+        transition: 1s;
+    }
     /* footer*/
     /* subscribe */
     
@@ -506,7 +627,7 @@
         border: 1px solid #A1AEBF;
         border-radius: 24px;
         position: relative;
-        top: 85em;
+        top: 95em;
         margin: auto;
     }
     
@@ -580,7 +701,7 @@
         padding: 20px 0;
         /* Allow items to wrap to the next line */
         position: relative;
-        top: 90em;
+        top: 100em;
     }
     
     input#id_first_name {
@@ -817,7 +938,7 @@
         /* latest projects */
         section#latest {
             position: relative;
-            top: 10em;
+            top: 20em;
         }
         p#img-flex1line {
             background-color: blue;
@@ -970,9 +1091,106 @@
             border: 1px solid #A1AEBF;
             border-radius: 24px;
             position: relative;
-            top: 85em;
+            top: 95em;
             margin: auto;
             flex-wrap: wrap;
+        }
+        #merch1p1 {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            color: #FF3900;
+            width: 425px;
+            position: relative;
+            bottom: 1.2em;
+        }
+        #merch1p2 {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            position: relative;
+            bottom: 2em;
+            width: 15em;
+        }
+        #merch1-button {
+            background-color: black;
+            width: 225px;
+            border: 2px solid white;
+            color: white;
+            height: 3em;
+            cursor: pointer;
+        }
+        #merch-shirt2 {
+            height: 170px;
+            flex: 50%;
+            padding-left: 15px;
+        }
+        #merchparagraph {
+            padding-left: 15px;
+            flex: 50%;
+        }
+        #merch-shirt2 {
+            height: 170px;
+            flex: 50%;
+            padding-left: 15px;
+        }
+        #merch1p1 {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #FF3900;
+            width: 425px;
+            position: relative;
+            bottom: 1.2em;
+        }
+        #merch1-button {
+            background-color: black;
+            width: 170px;
+            border: 2px solid white;
+            color: white;
+            height: 3em;
+            cursor: pointer;
+        }
+        #merch-hoddie1,
+        #merch-hoddie2 {
+            height: 170px;
+            padding-right: 15px;
+        }
+        #merch2p1 {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 0px;
+            color: #FF3900;
+            width: 425px;
+            position: relative;
+            bottom: 1.2em;
+        }
+        #merch2p2 {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            color: #FFFFFF;
+            width: 15em;
+            position: relative;
+            bottom: 2em;
+        }
+        #merch2-button {
+            background-color: black;
+            width: 170px;
+            border: 2px solid white;
+            color: white;
+            height: 3em;
+            cursor: pointer;
+        }
+        #merchparagraph2 {
+            flex: 50%;
+            position: relative;
+            left: 235px;
+        }
+        #merch2-flex {
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
     /* Media Query for low resolution  Tablets, Ipads */
@@ -1095,7 +1313,17 @@
             border: 1px solid #A1AEBF;
             border-radius: 24px;
             position: relative;
-            top: 85em;
+            top: 105em;
             margin: auto;
+        }
+        #shop-sec {
+            position: relative;
+            top: 80em;
+        }
+        footer {
+            background-color: #292933;
+            padding: 20px 0;
+            position: relative;
+            top: 110em;
         }
     }

@@ -121,25 +121,31 @@
         <div id="image-flex">
 
             <div>
+                {% for project in project1_list %}
 
-                <p style="text-align: center;bottom: 2em; position: relative; ">MY BABY <br>" OLUSEGUN "
+                <p style="text-align: center;bottom: 2em; position: relative; "> {{ project.song_name }} <br>" {{ project.artist_name }} "
                 </p>
                 <h2 style="text-align: center;bottom: 1em; position: relative; ">01</h2>
 
                 <p id="img-flex1line"></p>
 
-                <a target="_blank" href="https://lnkfi.re/MybabyOlusegun "><img id="img-flex1" src={% static "images/mybabyacc.png" %}></a>
+                <a target="_blank" href="{{ project.link }}"><img id="img-flex1" src="{{ project.project_image.url }}"></a>
+
+                {% endfor %}
             </div>
 
             <div>
+                {% for project in project2_list %}
 
-                <p style="text-align: center; ">AFROHEAT 2 <br> " SAVY,LEO9ICE <br> & ICEBOIY OLA "
+
+                <p style="text-align: center; ">{{ project.song_name }}<br> " {{ project.artist_name }} "
                 </p>
                 <h2 style="text-align: center;">02</h2>
                 <p id="img-flex2line"></p>
 
-                <a target="_blank" href="https://krewkut.lnk.to/Afroheat2"><img id="img-flex2" src={% static "images/afroholicnr.jpg" %}></a>
+                <a target="_blank" href="{{ project.link }}"><img id="img-flex2" src="{{ project.project_image.url }}"></a>
 
+                {% endfor %}
             </div>
 
 
@@ -149,6 +155,9 @@
         </div>
 
     </section>
+
+
+
 
     <section id="videos">
 
@@ -251,6 +260,104 @@
             </div>
 
         </div>
+
+    </section>
+
+
+    <section id="shop-sec">
+
+        <h1 id="shoph1">
+
+            SHOP
+
+        </h1>
+
+        <div id="bothmerch">
+
+            <div id="merch1-flex">
+
+
+
+
+                {% for shop in shop1_list %}
+
+
+                <img id="merch-shirt2" src="{{ shop.merch_image.url }}" alt="Afroholic Merch">
+
+                <div id="merchparagraph">
+
+                    <p id="merch1p1">
+
+                        {{ shop.merch_name }}
+
+                    </p>
+
+                    <p id="merch1p2">
+
+                        {{ shop.merch_description }}
+
+                        <br> ₦{{ shop.merch_price }}
+                    </p>
+
+                    <form id="merch1-button-form" target="_blank" action="{{ shop.merch_link }}">
+
+                        <button id="merch1-button">BUY NOW</button>
+
+                    </form>
+
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+
+
+            <div id="merch2-flex">
+
+
+
+
+
+                {% for shop in shop2_list %}
+
+                <img id="merch-hoddie2" src="{{ shop.merch_image.url }}" alt="Afroholic Merch">
+
+                <div id="merchparagraph2">
+
+                    <p id="merch2p1">
+
+                        {{ shop.merch_name }}
+
+                    </p>
+
+
+
+                    <p id="merch2p2">
+
+                        {{ shop.merch_description }}
+
+                        <br> ₦{{ shop.merch_price }}
+                    </p>
+
+
+                    <form id="merch2-button-form" target="_blank" action="{{ shop.merch_link }}">
+
+                        <button id="merch2-button">BUY NOW</button>
+
+                    </form>
+
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+
 
     </section>
 

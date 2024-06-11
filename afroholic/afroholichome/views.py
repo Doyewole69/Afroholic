@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from .forms import SubscribeForm
 from django.conf import settings
+from .models import Subscriber, upcomingproject1,upcomingproject2,news,merch1,merch2
 
 
 def subscribe(request):
@@ -25,7 +26,22 @@ def subscribe(request):
             return redirect('success')
     else:
         form = SubscribeForm()
-    return render(request, 'index.html', {'form': form})
+        
+    project1_list = upcomingproject1.objects.all()
+    project2_list = upcomingproject2.objects.all()
+    shop1_list = merch1.objects.all()
+    shop2_list = merch2.objects.all()
+    news_list = news.objects.all()
+
+    context = {
+        'form': form,
+        'project1_list': project1_list,
+        'project2_list': project2_list,
+        'shop1_list': shop1_list,
+        'shop2_list': shop2_list,
+        'news_list': news_list,
+    }    
+    return render(request, 'index.html', context)
 
 def success(request):
     return render(request, 'success.html')
