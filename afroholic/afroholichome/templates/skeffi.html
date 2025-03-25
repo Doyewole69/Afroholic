@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+ 
     <nav>
         <input type="checkbox" id="check">
         <label id="checkbtn" for="check" class="checkbtn">
@@ -34,13 +34,16 @@
 
         <a href="{% url 'subscribe' %}"> <img id="logoimg" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
 
-        <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
-        <li><a href="{% url 'subscribe' %}">HOME</a></li>
-        <li><a href="">DEPARTMENTS</a></li>
-        <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
-        <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
+        <ul>
+            <a href="{% url 'subscribe' %}"><img id="logoimg1" src={% static "images/logoacc.png" %} alt="LogoREFXG"></a>
+            <li><a href="{% url 'subscribe' %}">HOME</a></li>
+            <li><a href="{% url 'department' %}">DEPARTMENTS</a></li>
+            <li><a href="{% url 'artistes' %}">CLIENTS</a></li>
+            <li><a href="{% url 'artistes' %}">ARTISTES</a></li>
 
         </ul>
+
+    </nav>
 
 
         <section id="about-section" class="pt-5 pb-5">
